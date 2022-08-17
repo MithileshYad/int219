@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU</title>
+    
+</head>
+
+
+<style>
+    @media screen and (max-width:600px) {
+        
+    
+    body{
+       background-color: rgb(164, 164, 216);
+       
+       /* background-position: right;*/
+       /* background-repeat: no-repeat;*/
+
+
+        
+    }
+}
+body{
+    background-color: rgb(189, 189, 235);
+}
+
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+    }
+
+    .mid{
+        font-family: 'Baloo Bhai', cursive;
+        display: block;
+        width: 43%;
+        margin: 20px auto;
+
+       /* border: 2px solid green; */
+
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+
+    .navbar li{
+       
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a{
+        color: rgb(32, 28, 28);
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .navbar li a:hover, navbar li a.active{
+       
+        text-decoration: underline;
+        color: antiquewhite;
+        
+    }
+
+    .container{
+        background-color: rgb(146, 156, 191);
+        font-family: 'Baloo Bhai',cursive;
+        padding: 30px;
+        margin: 60px 50px;
+    }
+
+    .form-group{
+        width: 30%;
+        font-size: smaller;
+        color: rgb(65, 8, 11);
+        padding: 5px;
+        margin: 20px 10px ;    
+    }
+
+    #fill{
+        text-align: center;
+        
+    }
+    .btn{
+        width: 100px;
+        border-radius: 10px;
+    }
+    .btn:hover{
+        background-color: rgb(230, 175, 200);
+    }
+</style>
+<body>
+
+<header>
+    <!--mid-->
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact Us</a></li>
+            </ul>
+
+    </div>
+    <!--left for logo -->
+    <div class="left">
+    <img src="C:\Users\ASUS\OneDrive\Desktop\INT219\img/lpulogo.jfif" alt="">
+    
+</div>
+    <!--Right box for buttons-->
+    <div class="right">
+        <button class="btn"><a href="#" >Call Us</a></button>
+        <button class="btn"><a href="#" >Email Us</a></button>
+    </div>
+</header>
+<br><br><br>
+   <center> <h1>Addmission Form</h1></center>
+    <fieldset>
+        <h5>Fill the form very carefully </h5>
+    <div class="container">
+        <form action="noaction.php">
+            <h2>Your Detail</h2>
+            <div class="form-group">
+                <label for="fname">First name:</label>
+                <input type="text" id="fill" placeholder="First Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">First name:</label>
+                <input type="text"id="fill" placeholder="First Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">Last name:</label>
+                <input type="text"id="fill" placeholder="Last Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">Father's name:</label>
+                <input type="text"id="fill" placeholder="Enter your father name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fname">Mother's name:</label>
+                <input type="text"id="fill" placeholder="Enter your mother Name" required>
+            </div>
+<h2>Address Detail </h2>
+            <div class="form-group">
+                <label for="fname">Address</label>
+                <input type="text"id="fill" placeholder="Address line1" required>
+            </div>
+
+            <div class="form-group">
+                <label for="fname"></label>
+                <input type="text"id="fill" placeholder="Address line2" required>
+
+            </div>
+            <h2>Contact Detail</h2>
+
+            <div class="form-group">
+                <label for="fname">Your Mobile Number</label>
+                <input type="number"id="fill" placeholder="Enter your mobile number" required>
+            </div>
+            <div class="form-group">
+                <label for="fname">Father's Mobile number</label>
+                <input type="number"id="fill" placeholder="Enter your father's mobile number" required>
+            </div>
+            <div class="form-group">
+                <label for="fname">Email Id</label>
+                <input type="email"id="fill" placeholder="my983880@gmail.com" required>
+            </div>
+
+            <h2>Upload Documents</h2>
+
+            <label for="photo"> Photo:</label>
+            <input type="file" id="myFile" name="filename"><br><br>
+
+            <label for="photo">Signature!:</label>
+            <input type="file" id="myFile" name="filename"><br><br>
+
+            <label for="photo"> DOB Proof:</label>
+            <input type="file" id="myFile" name="filename">
+            <P>(NOTE:You can upload class10 marksheet or adhar card.)</p>
+
+        
+            <button class="btn">submit</button>
+            
+
+        </form>
+    </div>
+
+    </fieldset>
+</body>
+</html>
